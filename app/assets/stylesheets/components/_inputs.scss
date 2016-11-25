@@ -1,0 +1,36 @@
+form {
+  .field, .actions {
+    margin: .5em 0;
+    input {
+      border: 1px solid $soft-blue--color;
+      @include border-radius(0 .3em .3em .3em);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 100%;
+      outline-color: $soft-blue--color;
+      margin-bottom: .5em;
+      padding: .75em;
+      width: 100%;
+    }
+    input[type="submit"]{
+      border:0;
+      @include border-radius(.3em);
+    }
+    input[type="radio"],
+    input[type="checkbox"]{
+      width: auto;
+    }
+    label.labelBg {
+      background: $blue-sec--color;
+      @include border-radius(.3em .3em 0 0);
+      color: white;
+      font-size: 90%;
+      padding: .5em;
+    }
+    em {
+      color: $soft-blue--color;
+      font-size: 90%;
+    }
+  }
+
+}
