@@ -4,8 +4,28 @@
   <%= devise_error_messages! %>
 
   <div class="field">
+    <%= f.label :company %><br />
+    <%= f.text_field :company, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fullname %><br />
+    <%= f.text_field :fullname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :doc_type %><br />
+    <%= f.hidden_field :doc_type, :value => 'RUC' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :doc_number %><br />
+    <%= f.text_field :doc_number %>
+  </div>
+
+  <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email %>
   </div>
 
   <div class="field">
