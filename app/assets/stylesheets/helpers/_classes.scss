@@ -1,0 +1,19 @@
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+/* Text Colors */
+.text-white {
+  color: white;
+}
+
+/* Buttons */
+.button {
+  border: 0;
+  padding: .75em;
+}
+.buttonOrange {
+  background: $orange-main--color;
+  color: white;
+}

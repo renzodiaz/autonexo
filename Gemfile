@@ -49,3 +49,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Back End Gems
 gem 'devise'
+
+# Front End Gems
+gem 'react-rails'
+gem 'bourbon'
