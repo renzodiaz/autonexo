@@ -1,0 +1,11 @@
+<section class="vehiclesPage">
+  <div class="container">
+    <div class="vehiclesContainer">
+      <ul class="vehiclesList">
+        <% @vehicles.each do |vehicle| %>
+            <%= react_component 'Vehicles', {data: vehicle} %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</section>

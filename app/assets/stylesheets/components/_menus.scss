@@ -1,0 +1,27 @@
+.dashboardMenu {
+  background: $black-alt--color;
+  float: left;
+  height: 100vh;
+  position: relative;
+  width: 200px;
+  z-index: -1;
+  .wrap-menu {
+    .menu-item {
+      border-left: 2px solid transparent;
+      @include transition(all .3s ease);
+      a {
+        color: white;
+        font-family: 'M+ Light', sans-serif;
+        font-size: .95em;
+        display: block;
+        padding: .75em;
+      }
+      &:hover {
+        background: $black-sec--color;
+      }
+    }
+    .menu-item-active {
+      border-left: 2px solid $orange-main--color;
+    }
+  }
+}

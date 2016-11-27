@@ -1,4 +1,4 @@
-@Header = React.createClass
+@HomeHeader = React.createClass
   getInitialState: ->
     currentUser: @props.current_user
   render: ->
