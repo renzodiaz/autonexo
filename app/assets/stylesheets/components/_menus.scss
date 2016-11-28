@@ -4,24 +4,27 @@
   height: 100vh;
   position: relative;
   width: 200px;
-  z-index: -1;
+  z-index: 99;
   .wrap-menu {
+    .menu-item-active {
+      a {
+        background: $black-sec--color;
+        border-left: 2px solid $orange-main--color;
+      }
+    }
     .menu-item {
       border-left: 2px solid transparent;
-      @include transition(all .3s ease);
       a {
         color: white;
         font-family: 'M+ Light', sans-serif;
         font-size: .95em;
         display: block;
         padding: .75em;
+        @include transition(all .3s ease);
+        &:hover {
+          background: $black-sec--color;
+        }
       }
-      &:hover {
-        background: $black-sec--color;
-      }
-    }
-    .menu-item-active {
-      border-left: 2px solid $orange-main--color;
     }
   }
 }

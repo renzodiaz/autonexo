@@ -13,7 +13,10 @@
   <div class="dashboard-main-content">
     <%= render "partials/dashboard_menu" %>
     <div class="wrap-content">
-      <%= yield %>
+      <div class="wrap-inner">
+        <%= react_component 'DashboardTitle', title: yield(:title) %>
+        <%= yield %>
+      </div>
     </div>
   </div>
 </body>

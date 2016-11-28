@@ -8,5 +8,5 @@
           className: 'menu-list'
           [React.createElement 'li', {key: 1, className: 'menu-item'},
             React.createElement 'a', {href: '/dashboard'}, 'Dashboard',
-          React.createElement 'li', {key: 2, className: 'menu-item'},
+          React.createElement 'li', {key: 2, className: 'menu-item menu-item-active'},
             React.createElement 'a', {href: '/dashboard/vehicles'}, 'Vehicles']

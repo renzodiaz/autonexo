@@ -17,3 +17,30 @@
   background: $orange-main--color;
   color: white;
 }
+
+/* Titles */
+.dash-uppercase-title {
+  text-transform: uppercase;
+}
+
+/*  Tables */
+.table {
+  border:0;
+  border-spacing: 0;
+  font-size: .95em;
+  text-align: left;
+  width: 100%;
+  tr {
+    th {
+      background: white;
+      font-family: 'M+ Light', sans-serif;
+      padding: 1.5em 1em;
+    }
+    td {
+      padding: 1em;
+    }
+    &:nth-child(odd) {
+      background-color: #eeeeee;
+    }
+  }
+}

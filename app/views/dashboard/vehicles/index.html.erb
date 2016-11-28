@@ -1,11 +1,8 @@
+<% content_for :title, 'Vehicles' %>
 <section class="vehiclesPage">
   <div class="container">
     <div class="vehiclesContainer">
-      <ul class="vehiclesList">
-        <% @vehicles.each do |vehicle| %>
-            <%= react_component 'Vehicles', {data: vehicle} %>
-        <% end %>
-      </ul>
+      <%= react_component 'VehiclesTable', data:   @vehicles %>
     </div>
   </div>
 </section>
