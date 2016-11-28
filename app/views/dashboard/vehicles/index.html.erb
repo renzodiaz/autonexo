@@ -1,0 +1,8 @@
+<% content_for :title, 'Vehicles' %>
+<section class="vehiclesPage">
+  <div class="container">
+    <div class="vehiclesContainer">
+      <%= react_component 'VehiclesTable', data:   @vehicles %>
+    </div>
+  </div>
+</section>

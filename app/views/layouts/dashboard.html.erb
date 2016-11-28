@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <%= render "partials/dashboard_header" %>
+  <div class="dashboard-main-content">
+    <%= render "partials/dashboard_menu" %>
+    <div class="wrap-content">
+      <div class="wrap-inner">
+        <%= react_component 'DashboardTitle', title: yield(:title) %>
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

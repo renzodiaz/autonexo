@@ -1,0 +1,12 @@
+.wrap-content {
+  margin-left: 200px;
+  margin-top: 55px;
+  .wrap-inner {
+    padding: 2em;
+    .dash-head-title {
+      h3 {
+        font-size: 1em;
+      }
+    }
+  }
+}
