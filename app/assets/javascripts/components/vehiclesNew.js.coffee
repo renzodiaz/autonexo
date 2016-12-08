@@ -1,6 +1,7 @@
 @NewVehicle = React.createClass
   getInitialState: ->
      vehicle: ''
+     banner: ''
      price: ''
   handleValueChange: (e) ->
     valueName = e.target.name
@@ -15,6 +16,8 @@
     , 'JSON'
   render: ->
     React.DOM.form
+      encType: 'multipart/form-data'
+      method: 'post'
       className: 'new-vehicle'
       onSubmit: @handleSubmit
       React.DOM.div
@@ -24,6 +27,13 @@
           placeholder: 'Vehicle'
           name: 'vehicle'
           value: @state.vehicle
+          onChange: @handleValueChange
+      React.DOM.div
+        className: 'field'
+        React.DOM.input
+          type: 'file'
+          name: 'banner'
+          value: @state.banner
           onChange: @handleValueChange
       React.DOM.div
         className: 'field'
