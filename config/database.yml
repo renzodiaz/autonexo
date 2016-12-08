@@ -24,7 +24,7 @@ default: &default
   port: 5432
   username: postgres
   password: $$autonexo
-  #schema_search_path: "users,public"
+  #schema_search_path: "member,public"
 
 development:
   <<: *default
