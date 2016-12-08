@@ -8,15 +8,21 @@
     vehicles.push vehicle
     @setState vehicles: vehicles
   render: ->
-    React.createElement NewVehicle, handleNewVehicle: @addVehicle
-    React.DOM.table
-      className: 'table', 
-      React.DOM.thead null,
-        React.DOM.tr null,
-          React.DOM.th null, 'Model'
-          React.DOM.th null, 'Category'
-          React.DOM.th null, 'Price'
-          React.DOM.th null, 'Created at'
-      React.DOM.tbody null,
-        for vehicle in @state.vehicles
-          React.createElement Vehicle, key: vehicle.id, vehicle: vehicle
+    React.DOM.div
+      className: 'vechicles-wrapper'
+      React.DOM.h2
+        className: 'title'
+        'New'
+      React.createElement NewVehicle, handleNewVehicle: @addVehicle
+      React.DOM.hr null
+      React.DOM.table
+        className: 'table'
+        React.DOM.thead null,
+          React.DOM.tr null,
+            React.DOM.th null, 'Model'
+            React.DOM.th null, 'Category'
+            React.DOM.th null, 'Price'
+            React.DOM.th null, 'Created at'
+        React.DOM.tbody null,
+          for vehicle in @state.vehicles
+            React.createElement Vehicle, key: vehicle.id, vehicle: vehicle
