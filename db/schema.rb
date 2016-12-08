@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20161126024251) do
     t.string   "vehicle",                              default: "", null: false
     t.string   "summary",                              default: "", null: false
     t.decimal  "price",       precision: 10, scale: 2
-    t.integer  "image_id"
+    t.string   "banner"
     t.integer  "user_id"
     t.integer  "category_id"
     t.datetime "created_at",                                        null: false
