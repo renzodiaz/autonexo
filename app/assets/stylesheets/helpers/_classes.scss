@@ -4,6 +4,9 @@
 }
 
 /* Text Colors */
+.text-orange {
+  color: $orange-main--color;
+}
 .text-white {
   color: white;
 }
@@ -21,6 +24,14 @@
 /* Titles */
 .dash-uppercase-title {
   text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 2em;
+}
+
+.sec-title {
+  font-size: 1.5em;
 }
 
 /*  Tables */

@@ -1,4 +1,6 @@
 @import "bourbon";
+@import "owl.carousel";
+@import "owl.theme";
 /** Helpers **/
 @import "helpers/colors";
 @import "helpers/variables";
@@ -11,6 +13,7 @@
 @import "components/headers";
 @import "components/inputs";
 @import "components/menus";
+@import "components/owlcarousel";
 /** Pages **/
 @import "pages/home";
 @import "pages/login";
