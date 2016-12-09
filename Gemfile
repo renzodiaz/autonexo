@@ -57,3 +57,4 @@ gem 'figaro'
 # Front End Gems
 gem 'react-rails'
 gem 'bourbon'
+gem 'owlcarousel-rails'

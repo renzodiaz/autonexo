@@ -1,0 +1,2 @@
+@Banner = React.createClass
+  render: ->

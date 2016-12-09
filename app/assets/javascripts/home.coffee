@@ -1,3 +1,9 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$(document).ready ->
+  $('#main-banner-carousel').owlCarousel
+    autoPlay: 5000
+    slideSpeed: 300
+    navigation: false
+    paginationSpeed: 400
+    responsive: true
+    singleItem: true
+  return
