@@ -1,0 +1,12 @@
+<% products.each do |p| %>
+<div class="item">
+  <img src="https://s3.amazonaws.com/autonexo/static/banner.jpg" alt="<%= p.vehicle %>"/>
+  <div class="main-info">
+    <div class="container">
+      <h2><%= p.vehicle %></h2>
+      <span class="text-white"><%= number_to_currency(p.price,  unit: '$ ') %></span>
+    </div>
+  </div>
+
+</div>
+<% end %>

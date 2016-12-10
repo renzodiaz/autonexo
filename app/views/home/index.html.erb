@@ -1,3 +1,5 @@
 <section class="main-banner">
-    <%= react_component 'MainBanner', data: @products %>
+  <div id="main-banner-carousel" class="wl-carousel owl-theme">
+    <%= render 'partials/banner_items', products: @products %>
+  </div>
 </section>
