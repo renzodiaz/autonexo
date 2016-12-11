@@ -49,9 +49,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Back End Gems
 gem 'devise'
-gem 'fog-aws'
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'mini_magick'
-gem 'carrierwave'
+gem 'fog'
 gem 'figaro'
 
 # Front End Gems

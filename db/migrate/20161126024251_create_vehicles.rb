@@ -4,7 +4,7 @@ class CreateVehicles < ActiveRecord::Migration[5.0]
       t.string :vehicle, null: false, default: ''
       t.string :summary, null: false, default: ''
       t.decimal :price, precision: 10, scale: 2
-      t.string :banner
+      t.string :cover
       t.integer :user_id
       t.integer :category_id
       t.timestamps

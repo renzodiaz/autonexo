@@ -1,5 +1,5 @@
 class Vehicle < ApplicationRecord
   #belongs_to :brand_user
-  mount_uploader :banner, BannerVehicleUploader
+  mount_uploader :cover, CoverUploader
 
 end

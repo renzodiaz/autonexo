@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20161126024251) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "member", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                            default: "", null: false
     t.string   "encrypted_password",               default: "", null: false
     t.string   "reset_password_token"
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20161126024251) do
     t.string   "vehicle",                              default: "", null: false
     t.string   "summary",                              default: "", null: false
     t.decimal  "price",       precision: 10, scale: 2
-    t.string   "banner"
+    t.string   "cover"
     t.integer  "user_id"
     t.integer  "category_id"
     t.datetime "created_at",                                        null: false

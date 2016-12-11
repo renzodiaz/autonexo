@@ -16,7 +16,7 @@ class Dashboard::VehiclesController < ApplicationController
 
   private
   def vehicles_params
-    params.require(:vehicle).permit(:vehicle, :banner, :price)
+    params.require(:vehicle).permit(:vehicle, :cover, :price)
   end
 
 end
