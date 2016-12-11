@@ -1,4 +1,8 @@
 @DashboardMenu = React.createClass
+  getInitialState: ->
+    items: @props.data
+    request: @props.request
+    active: ''
   render: ->
     React.DOM.nav
       className: 'dashboardMenu'
@@ -6,7 +10,12 @@
         className: 'wrap-menu'
         React.DOM.ul
           className: 'menu-list'
-          [React.createElement 'li', {key: 1, className: 'menu-item'},
-            React.createElement 'a', {href: '/dashboard'}, 'Dashboard',
-          React.createElement 'li', {key: 2, className: 'menu-item menu-item-active'},
-            React.createElement 'a', {href: '/dashboard/vehicles'}, 'Vehicles']
+          for item in @state.items
+            if @state.request == item.controller
+              @state.active = 'menu-item-active'
+            else
+              @state.active = ''
+            React.createElement 'li', {key: item.id, className: 'menu-item ' + @state.active},
+              React.createElement 'a', {href: item.controller}, item.name
+
+

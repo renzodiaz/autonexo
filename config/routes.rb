@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :navigations
+  resources :dealers
   namespace :dashboard do
     get '/', to: 'dashboard#index'
     resources :vehicles
+    resources :dealers
   end
 
   namespace :brand do

@@ -9,12 +9,10 @@
 </head>
 
 <body>
-  <%= render "partials/dashboard_header" %>
   <div class="dashboard-main-content">
-    <%= render "partials/dashboard_menu" %>
+    <%= react_component 'DashboardMenu', data: navigation, request: request.path %>
     <div class="wrap-content">
       <div class="wrap-inner">
-        <%= react_component 'DashboardTitle', title: yield(:title) %>
         <%= yield %>
       </div>
     </div>

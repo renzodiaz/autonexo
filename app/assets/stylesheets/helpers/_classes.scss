@@ -3,6 +3,10 @@
   max-width: 1170px;
 }
 
+.form-hide {
+  display: none;
+}
+
 /* Text Colors */
 .text-orange {
   color: $orange-main--color;
@@ -14,11 +18,20 @@
 /* Buttons */
 .button {
   border: 0;
+  @include border-radius(.5em);
+  color: white;
+  cursor: pointer;
+  font-family: 'M+ Medium', sans-serif;
+  font-size: 1em;
   padding: .75em;
 }
-.buttonOrange {
+
+.button-green {
+  background: $green-main--color;
+}
+
+.button-orange {
   background: $orange-main--color;
-  color: white;
 }
 
 /* Titles */

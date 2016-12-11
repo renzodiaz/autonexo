@@ -1,8 +1,12 @@
-<% content_for :title, 'Vehicles' %>
 <section class="vehiclesPage">
-  <div class="container">
-    <div class="vehiclesContainer">
-      <%= react_component 'Vehicles', data: @vehicles %>
+  <div class="head-content">
+    <h2>Vehicles</h2>
+    <div class="action">
+      <button class="button button-green" id="show-form">Create new vehicle</button>
     </div>
+  </div>
+
+  <div class="vehiclesContainer">
+    <%= react_component 'Vehicles', data: @vehicles %>
   </div>
 </section>

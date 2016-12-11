@@ -1,47 +1,38 @@
-@NewVehicle = React.createClass
+@NewDealer = React.createClass
   getInitialState: ->
-     vehicle: ''
-     banner: ''
-     price: ''
+    name: ''
+    fulladdress: ''
   handleValueChange: (e) ->
     valueName = e.target.name
     @setState "#{valueName}" : e.target.value
   valid: ->
-    @state.vehicle && @state.price
+    @state.name && @state.fulladdress
   handleSubmit: (e) ->
     e.preventDefault()
-    $.post '', { vehicle: @state }, (data) =>
-      @props.handleNewVehicle data
+    $.post '', { dealer: @state }, (data) =>
+      @props.handleNewDealer data
       @setState @getInitialState()
     , 'JSON'
   render: ->
     React.DOM.form
-      encType: 'multipart/form-data'
       method: 'post'
-      className: 'new-vehicle form-hide'
+      className: 'new-deader form-hide'
       onSubmit: @handleSubmit
       React.DOM.div
         className: 'field'
         React.DOM.input
           type: 'text'
-          placeholder: 'Vehicle'
-          name: 'vehicle'
-          value: @state.vehicle
-          onChange: @handleValueChange
-      React.DOM.div
-        className: 'field'
-        React.DOM.input
-          type: 'file'
-          name: 'banner'
-          value: @state.banner
+          placeholder: 'Name'
+          name: 'name'
+          value: @state.name
           onChange: @handleValueChange
       React.DOM.div
         className: 'field'
         React.DOM.input
           type: 'text'
-          placeholder: 'Price'
-          name: 'price'
-          value: @state.price
+          placeholder: 'Address'
+          name: 'fulladdress'
+          value: @state.fulladdress
           onChange: @handleValueChange
       React.DOM.div
         className: 'field'

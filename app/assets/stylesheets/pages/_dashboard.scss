@@ -1,11 +1,22 @@
 .wrap-content {
   margin-left: 200px;
-  margin-top: 55px;
   .wrap-inner {
     padding: 2em;
-    .dash-head-title {
-      h3 {
-        font-size: 1em;
+    .head-content {
+      margin-bottom: 1em;
+      overflow: hidden;
+      h2 {
+        display: inline-block;
+        font-family: 'M+ Regular', sans-serif;
+        font-size: 1.5em;
+        font-weight: normal;
+        margin-top: .3em;
+        vertical-align: top;
+      }
+      .action {
+        display: inline-block;
+        float:right;
+        vertical-align: top;
       }
     }
   }
