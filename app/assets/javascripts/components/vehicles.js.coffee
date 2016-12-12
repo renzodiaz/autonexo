@@ -10,11 +10,7 @@
   render: ->
     React.DOM.div
       className: 'vechicles-wrapper'
-      React.DOM.h2
-        className: 'title'
-        'New'
       React.createElement NewVehicle, handleNewVehicle: @addVehicle
-      React.DOM.hr null
       React.DOM.table
         className: 'table'
         React.DOM.thead null,

@@ -3,5 +3,11 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   movies = Movie.create([{ name: 'Star Wars' }, { name  : 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Navigation.create([{name: 'Dashboard', controller: '/dashboard', priority: 1},
+                   {name: 'Vehicles', controller: '/dashboard/vehicles', priority: 2},
+                   {name: 'Dealers' , controller: '/dashboard/dealers', priority: 3}
+                  ])
+p "Created #{Navigation.count} Items"
