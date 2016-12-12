@@ -19,5 +19,22 @@
         vertical-align: top;
       }
     }
+    .menu-inner {
+      padding: 1em 0;
+      border-bottom: 1px solid $border--color;
+      border-top: 1px solid $border--color;
+      margin-top: 2em;
+      ul {
+        li {
+          display: inline-block;
+          padding: 0 .5em;
+          margin-right: .5em;
+          vertical-align: top;
+          a {
+            color: $black-alt--color;
+          }
+        }
+      }
+    }
   }
 }

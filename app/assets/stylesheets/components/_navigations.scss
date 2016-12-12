@@ -11,7 +11,7 @@
       padding: 0 .5em;
       a {
         @include border-radius(2em);
-        color: $black-alt--color;
+        color: $text-over-black--color;
         font-family: 'M+ Regular', sans-serif;
         font-size: .95em;
         display: block;
