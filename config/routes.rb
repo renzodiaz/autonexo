@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :navigations
   namespace :dashboard do
     get '/', to: 'dashboard#index'
+    resources :promos
     resources :vehicles
     resources :car_dealerships
   end
