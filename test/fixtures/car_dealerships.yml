@@ -2,10 +2,8 @@
 
 one:
   name: MyString
-  fulladdress: MyText
-  places_id: 1
+  address: MyString
 
 two:
   name: MyString
-  fulladdress: MyText
-  places_id: 1
+  address: MyString
