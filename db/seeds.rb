@@ -7,7 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Navigation.create([{name: 'Dashboard', controller: '/dashboard', priority: 1},
-                   {name: 'Vehicles', controller: '/dashboard/vehicles', priority: 2},
-                   {name: 'Dealers' , controller: '/dashboard/dealers', priority: 3}
+                   {name: 'Deals', controller: '/vehicles/deals', priority: 2},
+                   {name: 'Vehicles', controller: '/dashboard/vehicles', priority: 3},
+                   {name: 'Car Dealership' , controller: '/dashboard/car_dealerships', priority: 4}
                   ])
 p "Created #{Navigation.count} Items"

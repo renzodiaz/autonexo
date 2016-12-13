@@ -1,0 +1,2 @@
+class CarDealership < ApplicationRecord
+end

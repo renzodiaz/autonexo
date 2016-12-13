@@ -1,0 +1,12 @@
+<section class="vehiclesPage">
+  <div class="head-content">
+    <h2>Vehicles</h2>
+    <div class="action">
+      <button class="button button-green" id="show-form">Create new car dealership</button>
+    </div>
+  </div>
+
+  <div class="vehiclesContainer">
+    <%= react_component 'CarDealerships', data: @car_dealerships %>
+  </div>
+</section>
